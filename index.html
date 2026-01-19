@@ -1,0 +1,130 @@
+<!DOCTYPE html> 
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Olepedia</title>
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-image: url("./misc034.jpg");
+            margin: 0;
+            padding: 0;
+        }
+
+        #header {
+            background-image: url("./rock004.jpg");
+            border-bottom: 1px solid #ffffff;
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+        }
+
+        #header img {
+            height: 60px;
+            margin-right: 20px;
+        }
+
+        #header h1 {
+            color: white;
+            -webkit-text-stroke: #000000;
+            stroke: #000000;
+            stroke-width: 4px;
+            
+            font-size: 32px;
+            margin: 0;
+            font-weight: normal;
+        }
+
+        #content {
+            max-width: 900px;
+            margin: 20px auto;
+            background: rgb(0, 0, 0);
+            padding: 20px 30px;
+            border: 1px solid #ffffff;
+            position: relative;
+        }
+
+        a {
+            color: #0004ff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        ol {
+            margin-top: 20px;
+        }
+
+        li {
+            margin: 6px 0;
+        }
+
+        .search-box {
+            margin-top: 20px;
+        }
+
+        .search-box input[type="text"] {
+            width: 70%;
+            padding: 8px;
+            font-size: 16px;
+        }
+
+        .search-box button {
+            padding: 8px 12px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        #cornerButton {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: #ffffff;
+            color: rgb(0, 0, 0);
+            border: none;
+            padding: 10px 15px;
+            font-size: 14px;
+            border-radius: 6px;
+            cursor: pointer;
+            z-index: 1000;
+        }
+
+        #cornerButton:hover {
+            background: #000000;
+        }
+    </style>
+    
+</head>
+
+<body>
+
+<div id="header">
+    <img src="./misc035.jpg" alt="Olepedia Logo">
+    <h1>Olepedia</h1>
+</div>
+
+<div id="content">
+
+    <p><a href="About.html">Go to About</a></p>
+
+    <ol>
+        <li><a href="OlegKadyrov.html">About Oleg Kadyrov</a></li>
+        <li><a href="Linux.html">About Linux</a></li>
+    </ol>
+
+    <div class="search-box">
+        <input type="text" placeholder="Search Olepedia...">
+        <button onclick="alert('This search is completely useless on this site -Kostiantyn Kasyanenko ' )">Search</button>
+    </div>
+
+</div>
+
+<a href="memes.html">
+    <button id="cornerButton">Here</button>
+</a>
+
+</body>
+</html>
